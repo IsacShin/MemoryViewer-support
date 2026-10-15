@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MemoryViewer 지원</title>
+<meta name="description" content="MemoryViewer(메모리 뷰어) 앱 지원 페이지. 문의 방법과 자주 묻는 질문.">
+<style>
+  :root { --bg:#f4f5fa; --card:#fff; --text:#14151f; --sub:#5b5f73; --line:#e3e5ef; --purple:#bf59f2; --blue:#0a84ff; --orange:#ff9f0a; --green:#33d159; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b0d22; --card:#16182e; --text:#f2f3fa; --sub:#a3a7bf; --line:#262944; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; line-height:1.65; }
+  main { max-width:720px; margin:0 auto; padding:48px 20px 72px; }
+  h1 { font-size:2rem; margin:0 0 8px; }
+  h1 span { background:linear-gradient(90deg,var(--purple),var(--blue),var(--orange)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  p.lead { color:var(--sub); margin:0 0 28px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:22px 22px 8px; margin-bottom:16px; }
+  h2 { font-size:1.15rem; margin:0 0 12px; }
+  details { border-top:1px solid var(--line); padding:12px 0; }
+  details:first-of-type { border-top:0; }
+  summary { cursor:pointer; font-weight:600; }
+  details p { color:var(--sub); margin:8px 0 0; }
+  a { color:var(--blue); }
+  footer { color:var(--sub); font-size:.85rem; text-align:center; margin-top:28px; }
+</style>
+</head>
+<body>
+<main>
+  <h1><span>MemoryViewer</span> 지원</h1>
+  <p class="lead">RAM · CPU · 저장 공간 · FPS를 실시간으로 확인하는 앱, 메모리 뷰어의 지원 페이지입니다.</p>
+
+  <section>
+    <h2>문의하기</h2>
+    <p>앱 사용 중 문제가 있거나 제안하고 싶은 내용이 있으면 이메일로 보내주세요.</p>
+    <p><a href="mailto:isac9305@gmail.com?subject=[MemoryViewer] 문의">isac9305@gmail.com</a></p>
+    <p style="color:var(--sub)">문의 시 기기 모델, iOS 버전, 앱 버전을 함께 알려주시면 더 빠르게 도와드릴 수 있어요.</p>
+  </section>
+
+  <section>
+    <h2>자주 묻는 질문</h2>
+    <details>
+      <summary>메모리를 정리해주나요?</summary>
+      <p>아니요. iOS는 메모리를 자동으로 관리하며, 앱이 다른 앱을 종료하거나 시스템 메모리를 비울 수 없습니다. MemoryViewer는 현재 상태를 보여주는 모니터링 앱입니다.</p>
+    </details>
+    <details>
+      <summary>앱별 메모리 사용량을 볼 수 있나요?</summary>
+      <p>iOS 보안 정책상 다른 앱의 사용량은 확인할 수 없습니다. 기기 전체의 RAM, CPU, 저장 공간 사용량을 보여줍니다.</p>
+    </details>
+    <details>
+      <summary>FPS는 무엇을 측정하나요?</summary>
+      <p>이 앱 화면의 갱신 빈도 기준입니다. 다른 앱이나 게임의 FPS는 측정할 수 없으며, 앱이 백그라운드에 있으면 0으로 표시됩니다.</p>
+    </details>
+    <details>
+      <summary>PiP가 시작되지 않아요.</summary>
+      <p>PiP는 실제 기기에서만 사용할 수 있고, 시작할 때 전면 광고가 표시될 수 있습니다. 광고가 닫힌 뒤 PiP가 시작됩니다. 계속 문제가 있으면 앱을 완전히 종료한 뒤 다시 실행해 보세요.</p>
+    </details>
+    <details>
+      <summary>위젯 값이 바로 바뀌지 않아요.</summary>
+      <p>위젯은 iOS가 갱신 시점을 관리해서 실시간이 아닙니다. 위젯의 새로고침 버튼을 누르면 최신 값을 불러옵니다.</p>
+    </details>
+    <details>
+      <summary>위젯과 PiP에 보이는 항목을 바꾸고 싶어요.</summary>
+      <p>앱의 설정 탭에서 위젯과 PiP에 표시할 항목을 각각 선택할 수 있습니다. 최소 한 개 항목은 항상 표시됩니다.</p>
+    </details>
+  </section>
+
+  <footer>© MemoryViewer</footer>
+</main>
+</body>
+</html>
